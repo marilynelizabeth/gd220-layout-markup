@@ -1,0 +1,96 @@
+/*
+General CSS
+*/
+
+html,
+body {
+	padding: 0;
+	margin:0;
+}
+
+body{
+	font-family: sans-serif; 
+	line-height: 1.4;
+}
+
+.site_header {
+	overflow: hidden;
+	padding: 10px 15px;
+	text-align: center;
+	background: #58cff7;
+	box-shadow: 0px 1px 7px #666, inset 0 -1px 1px #fff; 
+}
+
+.branding{
+	margin: 0 0 15px;
+	
+}
+
+.site_nav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.site_nav li {
+	margin-bottom: 3px;
+}
+
+.site_nav a {
+	display: block;
+	padding: .3em .5em;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ff006a;
+	transition: background-color .2s linear;
+	-webkit-transition: background-color .2s linear;
+	border-radius: 4px; 
+}
+
+.site_nav a:hover {
+	background-color: #80898e;
+}
+/*
+Mobile Specific CSS
+*/
+
+@media screen and (max-width: 760px) {
+	video, 
+	object,
+	embed,
+	img {
+	display: block;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 1em;
+	}
+	
+}
+
+/*
+Desktop Specific CSS
+*/
+
+@media screen and (min-width: 760px) {
+	
+	.site_header {
+		text-align: left;
+	}
+	
+	.branding {
+		float: left;
+		width: 300px;
+		margin-right: 60px;
+	}
+	
+	.site_nav {
+		overflow: hidden;
+		margin-top: 35px;
+	}
+	
+	.site_nav li {
+		display: inline-block;
+		margin-right: 15px;
+	}
+}
